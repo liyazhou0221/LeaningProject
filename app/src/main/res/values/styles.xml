@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="MultiScrollSelectView">
+        <!--可供选择的项个数-->
+        <attr name="countOfOption" format="integer" />
+        <!--显示的可选个数 -->
+        <attr name="countOfShow" format="integer" />
+        <!--字体大小-->
+        <attr name="unSelectTextSize" format="dimension" />
+        <attr name="selectTextSize" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <!--字体颜色-->
+        <attr name="unSelectTextColor" format="color" />
+        <attr name="selectTextColor" format="color" />
+        <!--选中的样式-->
+        <attr name="selectBackgroundColor" format="color" />
+        <!--透明度 0~255-->
+        <attr name="selectBackgroundColorAlpha" format="integer" />
+        <!--分割线 为true时默认不显示选中项背景-->
+        <attr name="showDividerLine" format="boolean" />
+        <attr name="showSelectBackground" format="boolean" />
+        <!--选中字体加粗-->
+        <attr name="selectTextTypeBold" format="boolean" />
+        <attr name="dividingLineColor" format="color" />
+        <attr name="dividingLineWidth" format="dimension" />
+        <!--选项间隔线-->
+        <attr name="optionIntervalWidth" format="dimension" />
+    </declare-styleable>
+    <!--横向滚动公告-->
+    <declare-styleable name="MarqueeTextView">
+        <!--滚动时长毫秒-->
+        <attr name="scroll_interval" format="integer" />
+        <attr name="scroll_speed" format="integer" />
+        <attr name="scroll_first_delay" format="integer" />
+        <attr name="scroll_mode">
+            <enum name="mode_forever" value="100" />
+            <enum name="mode_once" value="101" />
+        </attr>
+    </declare-styleable>
+</resources>
